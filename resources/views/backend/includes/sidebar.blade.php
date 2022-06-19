@@ -4,7 +4,7 @@
     <a href="index3.html" class="brand-link">
         <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">E-commerce</span>
+        <span class="brand-text font-weight-light">Cars Easy</span>
     </a>
 
     <!-- Sidebar -->
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <!-- SidebarSearch Form -->
+        {{-- <!-- SidebarSearch Form -->
         <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
@@ -29,7 +29,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -70,23 +70,23 @@
                     </ul>
                 </li>
 
-             {{--   <li class="nav-item {{ request()->is('sub-test*') ? 'menu-open' : "" }}">
-                    <a href="#" class="nav-link {{ request()->is('sub-category*') ? 'active' : "" }}">
+              <li class="nav-item {{ request()->is('carbrand*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('carbrand*') ? 'active' : "" }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Sub Category
+                            Car Brand
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('sub_category.index') }}" class="nav-link {{ request()->is('sub-category') ? 'active' : "" }}">
+                            <a href="{{ route('carbrand.index') }}" class="nav-link {{ request()->is('carbrand') ? 'active' : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('sub_category.create') }}" class="nav-link {{ request()->is('sub-category/create') ? 'active' : "" }}">
+                            <a href="{{ route('carbrand.create') }}" class="nav-link {{ request()->is('carbrand/create') ? 'active' : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Create</p>
                             </a>
@@ -94,23 +94,23 @@
                     </ul>
                 </li>
 
-                <li class="nav-item {{ request()->is('product*') ? 'menu-open' : "" }}">
-                    <a href="#" class="nav-link {{ request()->is('product*') ? 'active' : "" }}">
+                <li class="nav-item {{ request()->is('car*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('car*') ? 'active' : "" }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Product
+                           Car
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('product.index') }}" class="nav-link {{ request()->is('product') ? 'active' : "" }}">
+                            <a href="{{ route('car.index') }}" class="nav-link {{ request()->is('car') ? 'active' : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('product.create') }}" class="nav-link {{ request()->is('product/create') ? 'active' : "" }}">
+                            <a href="{{ route('car.create') }}" class="nav-link {{ request()->is('car/create') ? 'active' : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Create</p>
                             </a>
@@ -118,31 +118,31 @@
                     </ul>
                 </li>
 
-                <li class="nav-item {{ request()->is('tag*') ? 'menu-open' : "" }}">
-                    <a href="#" class="nav-link {{ request()->is('tag*') ? 'active' : "" }}">
+                  <li class="nav-item {{ request()->is('user*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('user*') ? 'active' : "" }}">
                         <i class="nav-icon fa fa-tags"></i>
                         <p>
-                            Tag
+                            User
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('tag.index') }}" class="nav-link {{ request()->is('tag') ? 'active' : "" }}">
+                            <a href="{{ route('user.index') }}" class="nav-link {{ request()->is('user') ? 'active' : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{ route('tag.create') }}" class="nav-link {{ request()->is('tag/create') ? 'active' : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Create</p>
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
 
-                <li class="nav-item {{ request()->is('attribute*') ? 'menu-open' : "" }}">
+            {{--    <li class="nav-item {{ request()->is('attribute*') ? 'menu-open' : "" }}">
                     <a href="#" class="nav-link {{ request()->is('attribute*') ? 'active' : "" }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>

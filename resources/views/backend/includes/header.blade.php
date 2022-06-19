@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title')  E-commerce</title>
+    <title>@yield('title')  Cars Easy</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
