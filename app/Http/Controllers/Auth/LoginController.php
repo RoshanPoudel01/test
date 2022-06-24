@@ -38,15 +38,5 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    public function redirectTo()
-    {
-        if(Auth::user()->role_as == '1') //1 = Admin Login
-        {
-            return 'index';
-        }
-        elseif(Auth::user()->role_as == '0') // Normal or Default User Login
-        {
-            return '/';
-        }
-    }
+
 }
