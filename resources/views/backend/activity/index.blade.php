@@ -32,7 +32,7 @@
                                 <th>Activity Name</th>
                                 <th>Description</th>
                                 <th>Status</th>
-
+                                <th>Created By</th>
                                 <th>Created Date</th>
                                 <th>Action</th>
                             </tr>
@@ -45,7 +45,7 @@
                                     <td>{{ $row->activity_name }}</td>
                                     <td>{!! html_entity_decode($row->description) !!}</td>
                                     <td>{{ $row->status }}</td>
-
+                                    <td>{{ $row->createdBy->name }}</td>
                                     <td>{{ $row->created_at->format('Y-m-d') }}</td>
                                     <td style="display:flex">
                                         <a class="btn btn-primary btn-sm mr-2"

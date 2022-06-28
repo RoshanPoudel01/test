@@ -25,141 +25,21 @@
         </style>
     </head>
     <body class="antialiased">
-        {{-- <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-                </div> --}}
-                <section class="introduction">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img width="40%" height="40%" src="assets/image/logo.png" class="img-responsive" alt="logo">
-                            </div>
-                            <div class="col-md-8 intro">
-                                <p class="government">Government of Nepal</p>
-                                <p class="name">Ministry of Health and Population </p>
-
-                            </div>
-                            <div class="col-md-1">
-                                <img src="assets/image/nepal_flag.gif" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- <section class="top-bar"> -->
-                    <!-- <div class="top-content"> -->
-                        <div class="navigationmain">
-                            <div class="navsection">
-                                <div class="navstarts">
-                                    <div id="header-area" class="header_area">
-                        <div class="header_bottom">
-                            <div class="">
-                                <div class="">
-                                    <nav role="navigation" class="navbar navbar-default mainmenu">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                        <div class="navbar-header">
-                                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                        </div>
-                                        <!-- Collection of nav links and other content for toggling -->
-                                        <div id="navbarCollapse" class="collapse navbar-collapse">
-                                            <ul id="fresponsive" class="nav navbar-nav dropdown">
-                                                <li><a href="#">Home</a></li>
-                                                <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">About Us<span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="singlepage.html">About MOHP</a></li>
-                                                        <!-- <li>
-                                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu 2<span class="caret"></span></a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="singlepage.html">Lorem ipsum</a></li>
-                                                                <li><a href="singlepage.html">Lorem ipsum</a></li>
-
-                                                            </ul>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                                <!-- <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">About Us<span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#">About MOHP</a></li>
-                                                        <li>
-                                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu 2<span class="caret"></span></a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="#">Lorem ipsum</a></li>
-                                                                <li><a href="#">Lorem ipsum</a></li>
-
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li> -->
-                                                <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">News Notices<span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#">News/Notices</a></li>
-                                                        <!-- <li>
-                                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu 2<span class="caret"></span></a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="#">Lorem ipsum</a></li>
-                                                                <li><a href="#">Lorem ipsum</a></li>
-
-                                                            </ul>
-                                                        </li> -->
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div><!-- /.header_bottom -->
-
-                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+        @include('includes.navbar')
                     <!-- </div> -->
                 <!-- </section> -->
                 <section class="sliderinfo">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10">
-                                <div class="col-md-8">
+                                <div class="col-md-12">
                                     <section class="slider mainslider">
                                         <ul class="bxslider">
                                                 <li>
-                                                    <img src="assets/image/72344527916-days-activism_mowcsc_nepal.jpg" alt="" class="img-responsive imgback1">
+                                                    <img src="assets/image/ministry_image.png+" alt="" class="img-responsive imgback1">
                                                 </li>
                                             <li>
-                                            <img src="assets/image/72344527916-days-activism_mowcsc_nepal.jpg" alt="" class="img-responsive imgback1">
+                                            <img src="assets/image/ministry_image2.png" alt="" class="img-responsive imgback1">
                                             </li>
                                         </ul>
                                     </section>
@@ -179,54 +59,40 @@
                                 </div>
 
                                     <div class="col-md-5 brief">
-                                        <strong><p>Ministry of Women, Children and Social Welfare</p></strong>
-                                        <hr style="border:solid thin; border-color:#ccc; margin:0; padding:0; margin-bottom:10px; width:80px;">
-                                        <p>"ग्रामीण महिलाका लागि उत्पादन ऋण व्यवस्था कार्यक्रम" को रुपमा आ.व. २०३९।०४० मा शुरु भएको महिला विकास अभियान कार्यक्रमहरुबाट प्राप्त उपलव्धी, अनुभव र समसामयिक आवश्यकताका आधारमा २०५२ असोज ६ गते " महिला तथा समाज कल्याण मन्त्रालय" को स्थापना भयो । महिला तथा समाजका विभिन्न वर्गको सामाजिक, आर्थिक तथा राजनीतिक सशक्तिकरण गर्दै दिगो शान्ति एवं विकासमा उनीहरुको भूमिकालाई सशक्त बनाउने कार्यमा संलग्न महिला तथा समाज कल्याण मन्त्रालयको नाम बालबालिकालाई अझ उच्च प्राथमिकता दिने हेतुले २०५७ मा मन्त्रालयको नाम परिवर्तन गरी "महिला, बालबालिका तथा समाज कल्याण मन्त्रालय" नामाकरण गरियो । २०७५ सालबाट  यस मन्त्रालयको नाम  महिला, बालबालिका तथा जेष्ठ नागरिक मन्त्रालय रहेको छ ।</p>
-                                        <p>नेपाल सरकार (कार्य विभाजन) नियमावली, २०६९ आनुसार महिला, बालबालिका तथा जेष्ठ नागरिक मन्त्रालयको कार्यक्षेत्र भित्र महिला, बालबालिका तथा समाज कल्याण सम्बन्धी नीति, योजना तथा कार्यक्रमको तर्जुमा, कार्यान्वयन, अनुगमन र मूल्यांकनको साथै अध्ययन, अनुसन्धान तथा सर्वेक्षणका विषयहरु तोकिएका छन् । यसैगरी अनाथ बालबालिका, असहाय महिला, बृद्धरबृद्धा, अपाङ्गरअशक्तको संरक्षण, बालबालिकाको कल्याण, ज्येष्ठ नागरिकको सुरक्षा र कल्याण, महिला कल्याण तथा सीप विकास पनि यस मन्त्रालयक� </p>
-                                        <a class="pull-right" href="#">View More</a>
+                                        @foreach ( $home['row'] as $row )
+                                        {!!html_entity_decode($row->dataleft)!!}
+
+                                        @endforeach
+                                        <a class="pull-right" href="{{route('digitalmatrx')}}">View More</a>
                                         <hr style="border:solid thin; border-color:#ccc;">
+
                                     </div>
+
                                     <div class="col-md-7">
                                         <div class="tabpart">
                                         <ul class="nav nav-tabs">
                                             <li class="active"><a data-toggle="tab" href="#recentupdate">Recent Update</a></li>
-                                            <li><a data-toggle="tab" href="#notice">Notice</a></li>
-                                            <li><a data-toggle="tab" href="#pressrelease">Press Release</a></li>
+                                            {{-- <li><a data-toggle="tab" href="#notice">Notice</a></li>
+                                            <li><a data-toggle="tab" href="#pressrelease">Press Release</a></li> --}}
                                          </ul>
                                          <div class="tab-content">
                                             <div id="recentupdate" class="tab-pane fade in active">
+                                            @foreach ($data['rows'] as $dat )
+
                                                 <div class="breifing">
                                                     <i class="fa fa-calendar"></i>
-                                                    <p>दुर्गम क्षेत्रका ज्यान जोखिममा परेका गर्भवती तथा सुत्केरी महिलाहरुकालागि हवाई उद्धारसम्बन्धी कार्यवि </p>
-                                                    <small>2018/12/18</small>
+
+                                                    <a href="{{route('activity_details',['id' => $dat->id]) }}" >{!! html_entity_decode($dat->activity_name) !!} </a>
+                                                    <small>{{$dat->created_at->toDateString()}}</small>
                                                     <hr>
                                                 </div>
-                                                 <div class="breifing">
-                                                    <i class="fa fa-calendar"></i>
-                                                    <p>दुर्गम क्षेत्रका ज्यान जोखिममा परेका गर्भवती तथा सुत्केरी महिलाहरुकालागि हवाई उद्धारसम्बन्धी कार्यवि </p>
-                                                    <small>2018/12/18</small>
-                                                    <hr>
-                                                </div>
-                                                 <div class="breifing">
-                                                    <i class="fa fa-calendar"></i>
-                                                    <p>दुर्गम क्षेत्रका ज्यान जोखिममा परेका गर्भवती तथा सुत्केरी महिलाहरुकालागि हवाई उद्धारसम्बन्धी कार्यवि </p>
-                                                    <small>2018/12/18</small>
-                                                    <hr>
-                                                </div>
-                                                 <div class="breifing">
-                                                    <i class="fa fa-calendar"></i>
-                                                    <p>दुर्गम क्षेत्रका ज्यान जोखिममा परेका गर्भवती तथा सुत्केरी महिलाहरुकालागि हवाई उद्धारसम्बन्धी कार्यवि </p>
-                                                    <small>2018/12/18</small>
-                                                    <hr>
-                                                </div>
-                                                 <div class="breifing">
-                                                    <i class="fa fa-calendar"></i>
-                                                    <p>दुर्गम क्षेत्रका ज्यान जोखिममा परेका गर्भवती तथा सुत्केरी महिलाहरुकालागि हवाई उद्धारसम्बन्धी कार्यवि </p>
-                                                    <small>2018/12/18</small>
-                                                    <hr>
-                                                </div>
+                                                @endforeach
+                                                <div class="d-flex justify-content-center">
+                                                    {!! $data['rows']->links() !!}
+                                                    </div></br>
                                             </div>
-                                            <div id="notice" class="tab-pane fade">
+
+                                            {{-- <div id="notice" class="tab-pane fade">
                                                <div class="breifing">
                                                     <i class="fa fa-calendar"></i>
                                                     <p>मंगला सहाना दीर्घकालीन पुनर्स्थापना केन्द्र सन्चालन गर्न (परामर्श ) सेवा खरिदका लागि आशय पत्र आव्हान  </p>
@@ -289,46 +155,37 @@
                                                     <small>2018/12/18</small>
                                                     <hr>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                     </div>
+                                    <div>
+
+                                        <p>  @foreach ( $home['row'] as $row )
+                                            {!!html_entity_decode($row->datamain)!!}
+
+                                            @endforeach </p>
+                                        </div>
                             </div>
+
+
+
                             <div class="col-md-2">
                                 <aside>
                                     <div class="minister">
-                                        <img src="assets/image/birodh.jpg" class="img-responsive text-center" alt="">
-                                        <strong>Mr Binod Khatiwada</strong>
-                                        <p>Hon'ble Minister</p>
-                                    </div>
-                                    <div class="minister">
-                                        <img src="assets/image/bhawani.png" class="img-responsive" alt="">
-                                        <strong>Mr. Bhawani Prasad Khapung</strong>
-                                        <p>Hon'ble State Minister</p>
-                                    </div>
-                                    <div class="minister">
-                                        <img src="assets/image/dev-kumari.jpg" class="img-responsive" alt="">
-                                        <strong>Dev Kumari Guragain</strong>
-                                        <p>Secretary</p>
-                                    </div>
-                                    <div class="minister">
-                                        <img src="assets/image/DRROSHAN.jpg" class="img-responsive" alt="">
-                                        <strong>Dr.Roshan Pokhrel</strong>
-                                        <p>Secretary</p>
 
-                                    </div>
-                                    <div class="minister">
-                                        <img src="assets/image/Ganesh-Shrivastav.jpg" class="img-responsive" alt="">
-                                        <strong>Sunita Nepal</strong>
-                                        <p>Sr. Health Education Officer</p>
-                                        <p>Phone: 9848438654</p>
+                                        @foreach ( $home['row'] as $row )
+                                        {!!html_entity_decode($row->dataright)!!}
 
+                                        @endforeach
                                     </div>
+
                                 </aside>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section class="gallery">
                     <div class="container">
                         <div class="row">
@@ -369,52 +226,8 @@
                         </div>
                     </div>
                 </section>
-                <section class="footer">
-                    <div class="container">
-                        <div class="col-md-4">
-                            <h5><strong>Contact Details</strong></h5>
-                            <ul>
-                                <li>Government of Nepal</li>
-                                <li>Ministry of Health and Population</li>
-                                <li>Phone:+977- 014262543, 4262802</li>
-                                <li>Fax:+977-01-4262696</li>
-                                <li>Email:info (@) mohp.gov.np</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="pagedetails">
-                                <ul>
-                                    <li>Page Last Updated On : 2018-12-05 10:51:31</li>
-                                    <li>Current Time : 09:21:41 AM</li>
-                                    <li>Visitor Counter : 1997</li>
-                                </ul>
-                                <h5><strong>Stay Connected</strong></h5>
-                                <div class="icons">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="icons">
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </div>
-                                <div class="icons">
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 twittes">
-                            <a href="#">Tweets by mohp</a>
-                        </div>
-                    </div>
-                </section>
-                <section class="copyright">
-                    <div class="container">
-                        <div class="col-md-12">
-                            <p>
-                            Copyright © 2018. All Rights Reserved.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                @include('includes.footer')
+{{--
                 <script src="assets/js/jquery-2.2.2.min.js"></script>
                 <script src="assets/library/bootstrap/js/bootstrap.min.js"></script>
                 <script src="assets/library/bxslider/jquery.bxslider.min.js"></script>
@@ -436,6 +249,6 @@
                         });
                     });
                 })(jQuery);
-                            </script>
+                            </script> --}}
     </body>
 </html>

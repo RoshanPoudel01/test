@@ -27,9 +27,14 @@
 
         </div>
         <div class="col-3">
+            <div class="form-check">
 
-            {!! Form::checkbox('news',null, ['class'=>'form-check']) !!}
-            <label class="form-check-label">News</label>
+               {!! Form::checkbox('news', 1, false, ['class' => 'form-check-input']) !!}
+                <label class="form-check-label">
+                  <strong>News</strong>
+                </label>
+              </div>
+
         </div>
     </div>
 </div>

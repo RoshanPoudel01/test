@@ -4,6 +4,12 @@ body{
 a{
 	text-decoration: none;
 }
+.mortable{
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
 ul{
 	padding: 0px;
 }
@@ -12,7 +18,7 @@ ul{
 	padding: 20px;
 }
 button{
-	border:; 0px;
+	border: 0px;
 }
 .headlink{
 	background-color: #fff;
@@ -73,10 +79,10 @@ i{
     margin-right: 0px;
 }
 .dropdown-menu {
-    padding: 0px 0; 
-    margin: 0 0 0; 
+    padding: 0px 0;
+    margin: 0 0 0;
     border: 0px solid transition !important;
-	border: 0px solid rgba(0,0,0,.15);	
+	border: 0px solid rgba(0,0,0,.15);
 	border-radius: 0px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -197,7 +203,7 @@ small{
 	margin-top: 10px;
 }
 .breifing hr{
-	border:solid thin; 
+	border:solid thin;
 	border-color:#ccc;
 }
 .gallery h4{

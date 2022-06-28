@@ -49,6 +49,56 @@
 
 
 
+                {{-- <li class="nav-item {{ request()->is('menucategory*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('menucategory*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            menucategory
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('menucategory.index') }}" class="nav-link {{ request()->is('menucategory') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('menucategory.create') }}" class="nav-link {{ request()->is('menucategory/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('menusubcategory*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('menusubcategory*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            menusubcategory
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('menusubcategory.index') }}" class="nav-link {{ request()->is('menusubcategory') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('menusubcategory.create') }}" class="nav-link {{ request()->is('menusubcategory/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li> --}}
+
+
+
+
                 <li class="nav-item {{ request()->is('activity*') ? 'menu-open' : "" }}">
                     <a href="#" class="nav-link {{ request()->is('activity*') ? 'active' : "" }}">
                         <i class="nav-icon fa fa-tasks"></i>
@@ -72,16 +122,243 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item {{ request()->is('governance*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('governance*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Governance Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('governance.index') }}" class="nav-link {{ request()->is('governance') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('governance.create') }}" class="nav-link {{ request()->is('governance/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('homecontent*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('homecontent*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Home Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('homecontent.index') }}" class="nav-link {{ request()->is('homecontent') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('homecontent.create') }}" class="nav-link {{ request()->is('homecontent/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('digitalhealthmilestone*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('digitalhealthmilestone*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Digitalhealthmilestone Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('digitalhealthmilestone.index') }}" class="nav-link {{ request()->is('digitalhealthmilestone') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('digitalhealthmilestone.create') }}" class="nav-link {{ request()->is('digitalhealthmilestone/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('digitalhealthplatform*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('digitalhealthplatform*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Apps and Services Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('digitalhealthplatform.index') }}" class="nav-link {{ request()->is('digitalhealthplatform') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('digitalhealthplatform.create') }}" class="nav-link {{ request()->is('digitalhealthplatform/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('standardd*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('standardd*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Standardd Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('standardd.index') }}" class="nav-link {{ request()->is('standardd') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('standardd.create') }}" class="nav-link {{ request()->is('standardd/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('digitalmatrix*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('digitalmatrix*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Digitalmatrix Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('digitalmatrix.index') }}" class="nav-link {{ request()->is('digitalmatrix') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('digitalmatrix.create') }}" class="nav-link {{ request()->is('digitalmatrix/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
+                <li class="nav-item {{ request()->is('change*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('change*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Change Adoption Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('change.index') }}" class="nav-link {{ request()->is('change') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('change.create') }}" class="nav-link {{ request()->is('change/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('aihealth*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('aihealth*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            AI in Health Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('aihealth.index') }}" class="nav-link {{ request()->is('aihealth') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('aihealth.create') }}" class="nav-link {{ request()->is('aihealth/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-
-
-
+                <li class="nav-item {{ request()->is('implementation*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('implementation*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Implementation Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('implementation.index') }}" class="nav-link {{ request()->is('implementation') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('implementation.create') }}" class="nav-link {{ request()->is('implementation/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item {{ request()->is('infrastructure*') ? 'menu-open' : "" }}">
+                    <a href="#" class="nav-link {{ request()->is('infrastructure*') ? 'active' : "" }}">
+                        <i class="nav-icon fa fa-tasks"></i>
+                        <p>
+                            Infrastructure Tab
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('infrastructure.index') }}" class="nav-link {{ request()->is('infrastructure') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('infrastructure.create') }}" class="nav-link {{ request()->is('infrastructure/create') ? 'active' : "" }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                   <li class="nav-item {{ request()->is('user*') ? 'menu-open' : "" }}">
                     <a href="#" class="nav-link {{ request()->is('user*') ? 'active' : "" }}">
                         <i class="nav-icon fa fa-tags"></i>
                         <p>
-                            User
+                            User Details
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>

@@ -16,7 +16,9 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
+
                 {{ Form::open(['route' => 'activity', 'method' => 'post' ,'enctype'=>'multipart/form-data']) }}
+
 
                 @include('backend.activity.includes.main_form')
 

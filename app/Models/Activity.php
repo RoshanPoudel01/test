@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Activity extends Model
 {
     protected $fillable = [
-        'activity_name','description','status',
+        'activity_name','description','status','created_by',
     ];
+    public function createdBy(){
+        return $this->belongsTo(User::class,'created_by');
+    }
     use HasFactory;
 }

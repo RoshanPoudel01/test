@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Activity;
+use App\Models\News;
+
 use Exception;
 use Illuminate\Http\Request;
 
@@ -20,7 +22,7 @@ class ActivityController extends Controller
 
         $data = [];
 
-        $data['rows'] = $this->model->latest()->get();
+        $data['rows'] = $this->model->get();
 
         return  view('backend.activity.index',compact('data'));
     }
@@ -32,16 +34,13 @@ class ActivityController extends Controller
 
     public function store(Request $request){
 
-        //validation
-        // $request->validate([
-        //     'activity_name' => 'required',
-        //     'description' => 'required',
-        // ]);
 
 
 
+    if($request->news == null){
 
         try{
+            $request->request->add(['created_by' => auth()->user()->id]);
                 $this->model->create($request->all());
                 session()->flash('success_message','Data Inserted Successfully');
             }
@@ -51,6 +50,19 @@ class ActivityController extends Controller
         return redirect()->route('activity.index');
 
     }
+    else if($request->news == 1){
+
+        try{
+        $request->request->add(['created_by' => auth()->user()->id]);
+                News::create($request->all());
+                session()->flash('success_message','Data Inserted Successfully');
+            }
+            catch(\Exception $e){
+                session()->flash('error_message','Something Went Wrong!!');
+            }
+        return redirect()->route('activity.index');
+    }
+}
 
     public function show($id){
 
@@ -72,11 +84,7 @@ class ActivityController extends Controller
 
     public function update(Request $request,$id){
 
-        //validation
-        $request->validate([
-            'activity_name' => 'required',
-            'description' => 'required',
-        ]);
+
 
         try{
             $data['row'] = $this->model->find($id);
@@ -102,4 +110,12 @@ class ActivityController extends Controller
         return redirect()->route('activity.index');
 
     }
+    // public function view_details($id){
+    //     $activity_details = [];
+
+    //     $activity_details = Activity::where('id',$id)->first();
+    //     return view('frontend.activitydescription',compact('activity_details'));
+
+    // }
+
 }
